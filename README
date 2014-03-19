@@ -1,0 +1,20 @@
+TUTORIAL DTRACE
+===============
+
+Este tutorial tiene como proposito enseñar a utilizar la herramienta dtrace.
+
+INDICE
+======
+
+1. Breve evolución de los sistemas de debugging en caliente
+1.1. De sar a dtrace y lttng
+2. Problemas del dia a dia
+3. Dtrace, la solucion de Sun Microsystems
+4. Casos de uso comunes
+5. Que mas cosas
+6. Alternativas en Linux
+6.1. Los clasicos
+6.2. lsof, strace, ptrace, utrace
+6.3. systemtap
+6.4. lttng
+
