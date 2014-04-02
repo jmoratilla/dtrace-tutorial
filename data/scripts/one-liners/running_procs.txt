@@ -1,0 +1,11 @@
+# Top three questions to answer : 
+# 1- What are the applications running in this environment 
+# and their main characteristics ?
+# 2- What are the main data streams and what transport mechanism 
+# are used (tcp, udp ...) ? 
+# 3- Most importantly, what is running that we do not know about ? 
+# A way to detect this is to run this simple DTrace audit script :
+# (Note that this script is Solaris 10 zone aware... ) 
+
+
+/usr/sbin/dtrace -n 'proc:::exec{printf("%s execing %s, , uid/zone = %d/%s\\n",execname,args[0],uid,zonename)}' 
